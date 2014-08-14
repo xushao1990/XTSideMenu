@@ -3,7 +3,7 @@ Purpose
 
 A side menu style design by 网易.I just to practice.
 
-网易设计的一款侧滑方式，我仅仅练习而已
+网易设计的一款侧滑方式，我练习UI之余整理一下。
 
 
 Supported SDK Versions
@@ -61,24 +61,103 @@ The right ViewController.
 
     @property (nonatomic, weak) id <XTSideMenuDelegate> delegate;
 
+The delegate ,you can listen to some methods
+
+    @property (nonatomic) BOOL contentBlur;
+    
+The switch that you can open or close the contentView shade weather has blur effect.Default is YES.
+
+    @property (nonatomic) BOOL panGestureEnabled;
+    
+The switch that you can control weather sideMenu can open by panGesture.Default is YES.
+
+    @property (nonatomic) NSTimeInterval animationDuration;
+    
+The menu open or close animator duration.Default is 0.35;
+
+    @property (nonatomic, strong) UIColor *contentBlurViewTintColor;
+    
+When contentView shade has blur effect,this color is blur fix color.
+
+    @property (nonatomic) CGFloat contentBlurViewMinAlpha
+
+    @property (nonatomic) CGFloat contentBlurViewMaxAlpha
+
+When transitioning,The contentView shade view will change it's alpha.These is min or max aplha value.Default is 0 and 1.0.
+
+    @property (nonatomic) CGFloat leftMenuViewVisibleWidth;
+
+The left menu visiable width.Default is 240.
+
+    @property (nonatomic) CGFloat rightMenuViewVisibleWidth;
+
+The right menu visiable width.Default is 320.
+
+    @property (nonatomic, strong) UIColor *menuOpacityViewLeftBackgroundColor;
+    
+The left menu opacity view's background color.Default is R:223/255.0 G:48/255.0 B:49/255.0;
+
+    @property (nonatomic, strong) UIColor *menuOpacityViewRightBackgroundColor;
+
+The right menu opacity view's background color.Default is R:223/255.0 G:48/255.0 B:49/255.0;
+
+    @property (nonatomic) CGFloat menuOpacityViewLeftMinAlpha;
+
+    @property (nonatomic) CGFloat menuOpacityViewLeftMaxAlpha;
+
+    @property (nonatomic) CGFloat menuOpacityViewRightMinAlpha;
+
+    @property (nonatomic) CGFloat menuOpacityViewRightMaxAlpha;
+
+When menu is showing,the menu view will change the opacity view's alpha. Default is 0.75,0.8,0.75,0.9.
 
 
 Methods
 --------------
 
-The iCarousel class has the following methods (note: for Mac OS, substitute NSView for UIView in method arguments):
+The XTSide class has the following methods:
 
-	- (void)scrollToItemAtIndex:(NSInteger)index animated:(BOOL)animated;
+    - (instancetype)initWithContentViewController:(UIViewController *)contentViewController
+                       leftMenuViewController:(UIViewController *)leftMenuViewController
+                      rightMenuViewController:(UIViewController *)rightMenuViewController;
 
-This will center the carousel on the specified item, either immediately or with a smooth animation. For wrapped carousels, the carousel will automatically determine the shortest (direct or wraparound) distance to scroll. If you need to control the scroll direction, or want to scroll by more than one revolution, use the scrollByNumberOfItems method instead.
+This is the init method.The contentViewController is required,the leftMenuViewController and the rightMenuViewController is optional
 
+    - (void)presentLeftViewController;
+    
+Open the left menu.
 
+    - (void)presentRightViewController;
+    
+Open the right menu.
+
+    - (void)hideMenuViewController;
+    
+Close menu.
 
 
 Protocols
 ---------------
 
+    - (void)sideMenu:(XTSideMenu *)sideMenu didRecognizePanGesture:(UIPanGestureRecognizer *)recognizer;
 
+    - (void)sideMenu:(XTSideMenu *)sideMenu willShowLeftMenuViewController:(UIViewController *)menuViewController;
+
+    - (void)sideMenu:(XTSideMenu *)sideMenu didShowLeftMenuViewController:(UIViewController *)menuViewController;
+
+    - (void)sideMenu:(XTSideMenu *)sideMenu willHideLeftMenuViewController:(UIViewController *)menuViewController;
+
+    - (void)sideMenu:(XTSideMenu *)sideMenu didHideLeftMenuViewController:(UIViewController *)menuViewController;
+
+    - (void)sideMenu:(XTSideMenu *)sideMenu willShowRightMenuViewController:(UIViewController *)menuViewController;
+
+    - (void)sideMenu:(XTSideMenu *)sideMenu didShowRightMenuViewController:(UIViewController *)menuViewController;
+
+    - (void)sideMenu:(XTSideMenu *)sideMenu willHideRightMenuViewController:(UIViewController *)menuViewController;
+
+    - (void)sideMenu:(XTSideMenu *)sideMenu didHideRightMenuViewController:(UIViewController *)menuViewController;
+
+It's easy to understander their usage.
 
 
 Release Notes
