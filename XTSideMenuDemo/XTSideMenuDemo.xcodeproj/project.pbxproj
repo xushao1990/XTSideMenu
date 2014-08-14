@@ -30,6 +30,8 @@
 		75FC4DF5199CAB1700666243 /* SideSource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75FC4DF4199CAB1600666243 /* SideSource.xcassets */; };
 		75FC4DF9199CAD1B00666243 /* XTRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DF7199CAD1B00666243 /* XTRightViewController.m */; };
 		75FC4DFA199CAD1B00666243 /* XTRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75FC4DF8199CAD1B00666243 /* XTRightViewController.xib */; };
+		75FC4E00199CE50A00666243 /* 1136.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FC4DFF199CE50A00666243 /* 1136.jpg */; };
+		75FC4E02199CE51300666243 /* 960.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FC4E01199CE51300666243 /* 960.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		75FC4DF6199CAD1B00666243 /* XTRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTRightViewController.h; sourceTree = "<group>"; };
 		75FC4DF7199CAD1B00666243 /* XTRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTRightViewController.m; sourceTree = "<group>"; };
 		75FC4DF8199CAD1B00666243 /* XTRightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XTRightViewController.xib; sourceTree = "<group>"; };
+		75FC4DFF199CE50A00666243 /* 1136.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1136.jpg; sourceTree = "<group>"; };
+		75FC4E01199CE51300666243 /* 960.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 960.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 				75FC4DF6199CAD1B00666243 /* XTRightViewController.h */,
 				75FC4DF7199CAD1B00666243 /* XTRightViewController.m */,
 				75FC4DF8199CAD1B00666243 /* XTRightViewController.xib */,
+				75FC4E01199CE51300666243 /* 960.jpg */,
+				75FC4DFF199CE50A00666243 /* 1136.jpg */,
 				75FC4DF4199CAB1600666243 /* SideSource.xcassets */,
 				75FC4DAE199CA64C00666243 /* Images.xcassets */,
 				75FC4DA3199CA64C00666243 /* Supporting Files */,
@@ -286,11 +292,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FC4E02199CE51300666243 /* 960.jpg in Resources */,
 				75FC4DF3199CA8F700666243 /* XTCenterViewController.xib in Resources */,
 				75FC4DF5199CAB1700666243 /* SideSource.xcassets in Resources */,
 				75FC4DFA199CAD1B00666243 /* XTRightViewController.xib in Resources */,
 				75FC4DA7199CA64C00666243 /* InfoPlist.strings in Resources */,
 				75FC4DAF199CA64C00666243 /* Images.xcassets in Resources */,
+				75FC4E00199CE50A00666243 /* 1136.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +446,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XTSideMenuDemo/XTSideMenuDemo-Prefix.pch";
 				INFOPLIST_FILE = "XTSideMenuDemo/XTSideMenuDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -451,6 +460,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XTSideMenuDemo/XTSideMenuDemo-Prefix.pch";
 				INFOPLIST_FILE = "XTSideMenuDemo/XTSideMenuDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
