@@ -3,6 +3,7 @@ Purpose
 
 A side menu style design by 网易.I just to practice.
 
+![image](https://raw.githubusercontent.com/xushao1990/XTSideMenu/master/effect.gif)
 
 Supported SDK Versions
 -----------------------------
