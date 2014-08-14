@@ -14,4 +14,5 @@
 @property (nonatomic, readwrite) UIColor *tintColor;
 @property (nonatomic, weak) UIView *viewToBlur;
 @property (nonatomic) BOOL blur;
+- (void)updateBlur;
 @end

@@ -121,24 +121,6 @@ typedef NS_ENUM(NSUInteger, XTSideMenuDelegateType) {
     
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    self.menuButton = ({
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectNull;
-        [button addTarget:self action:@selector(hideMenuViewController) forControlEvents:UIControlEventTouchUpInside];
-        button;
-    });
-    
-    self.menuOpacityView = ({
-        UIView *view = [[UIView alloc] initWithFrame:CGRectNull];
-        view;
-    });
-    
-    self.contentBlurView = ({
-        XTBlurView *imageView = [[XTBlurView alloc] initWithFrame:CGRectNull];
-        [self updateContentBlurViewImage];
-        imageView;
-    });
-    
     [self.view addSubview:self.menuViewContainer];
     [self.view addSubview:self.contentViewContainer];
     
@@ -181,6 +163,25 @@ typedef NS_ENUM(NSUInteger, XTSideMenuDelegateType) {
     [self.view addGestureRecognizer:panGestureRecognizer];
     
     [self addCenterKVO];
+    
+    
+    self.menuButton = ({
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectNull;
+        [button addTarget:self action:@selector(hideMenuViewController) forControlEvents:UIControlEventTouchUpInside];
+        button;
+    });
+    
+    self.menuOpacityView = ({
+        UIView *view = [[UIView alloc] initWithFrame:CGRectNull];
+        view;
+    });
+    
+    self.contentBlurView = ({
+        XTBlurView *imageView = [[XTBlurView alloc] initWithFrame:CGRectNull];
+        [self updateContentBlurViewImage];
+        imageView;
+    });
 }
 
 #pragma mark -
@@ -875,6 +876,12 @@ typedef NS_ENUM(NSUInteger, XTSideMenuDelegateType) {
     }else if (type == XTSideMenuShowTypeRight) {
         self.menuOpacityView.backgroundColor = self.menuOpacityViewRightBackgroundColor;
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.contentBlurView updateBlur];
 }
 
 - (void)didReceiveMemoryWarning
