@@ -3,8 +3,6 @@ Purpose
 
 A side menu style design by 网易.I just to practice.
 
-网易设计的一款侧滑方式，我练习UI之余整理一下。
-
 
 Supported SDK Versions
 -----------------------------
@@ -15,15 +13,11 @@ Supported SDK Versions
 
 NOTE: 'Supported' means that the library has been tested with this version. 'Compatible' means that the library should work on this OS version (i.e. it doesn't rely on any unavailable SDK features) but is no longer being tested for compatibility and may require tweaking or bug fixes to run correctly.
 
-xcode 5.1，SDK iOS 7.1下开发，测试过iOS6的兼容性，iOS5没有测试，理论上支持
-
 
 ARC Compatibility
 ------------------
 
-XTSideMenu need ARC
-
-ARC，必须
+ARC required.
 
 
 Installation
@@ -31,15 +25,11 @@ Installation
 
 Just drag the XTSideMenu class files into your project.
 
-把相关类拖入工程即可
-
 
 Explain
 --------------
 
-All the effect is based on the original, and then add some customization.
-
-所有的效果都是分析网易客户端取得，并在开放了一些定制的接口
+All effects are based on the original app, and then add some customization.
 
 
 Properties
@@ -121,7 +111,7 @@ The XTSide class has the following methods:
                        leftMenuViewController:(UIViewController *)leftMenuViewController
                       rightMenuViewController:(UIViewController *)rightMenuViewController;
 
-This is the init method.The contentViewController is required,the leftMenuViewController and the rightMenuViewController is optional
+This is the init method.The contentViewController is required,the leftMenuViewController and the rightMenuViewController is optional.
 
     - (void)presentLeftViewController;
     
@@ -157,7 +147,7 @@ Protocols
 
     - (void)sideMenu:(XTSideMenu *)sideMenu didHideRightMenuViewController:(UIViewController *)menuViewController;
 
-It's easy to understander their usage.
+It's easy to understander their usages.
 
 
 Release Notes

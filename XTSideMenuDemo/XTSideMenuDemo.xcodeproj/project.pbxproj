@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75FC4D9D199CA64C00666243 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FC4D9C199CA64C00666243 /* Foundation.framework */; };
+		75FC4D9F199CA64C00666243 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FC4D9E199CA64C00666243 /* CoreGraphics.framework */; };
+		75FC4DA1199CA64C00666243 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FC4DA0199CA64C00666243 /* UIKit.framework */; };
+		75FC4DA7199CA64C00666243 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75FC4DA5199CA64C00666243 /* InfoPlist.strings */; };
+		75FC4DA9199CA64C00666243 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DA8199CA64C00666243 /* main.m */; };
+		75FC4DAD199CA64C00666243 /* XTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DAC199CA64C00666243 /* XTAppDelegate.m */; };
+		75FC4DAF199CA64C00666243 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75FC4DAE199CA64C00666243 /* Images.xcassets */; };
+		75FC4DB6199CA64C00666243 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FC4DB5199CA64C00666243 /* XCTest.framework */; };
+		75FC4DB7199CA64C00666243 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FC4D9C199CA64C00666243 /* Foundation.framework */; };
+		75FC4DB8199CA64C00666243 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FC4DA0199CA64C00666243 /* UIKit.framework */; };
+		75FC4DC0199CA64C00666243 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75FC4DBE199CA64C00666243 /* InfoPlist.strings */; };
+		75FC4DC2199CA64C00666243 /* XTSideMenuDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DC1199CA64C00666243 /* XTSideMenuDemoTests.m */; };
+		75FC4DD9199CA6D700666243 /* UIViewController+XTSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DD1199CA6D700666243 /* UIViewController+XTSideMenu.m */; };
+		75FC4DDB199CA6D700666243 /* XTSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DD6199CA6D700666243 /* XTSideMenu.m */; };
+		75FC4DE3199CA80000666243 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DDE199CA80000666243 /* UIImage+ImageEffects.m */; };
+		75FC4DE4199CA80000666243 /* UIView+XTFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DE0199CA80000666243 /* UIView+XTFrame.m */; };
+		75FC4DE5199CA80000666243 /* XTBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DE2199CA80000666243 /* XTBlurView.m */; };
+		75FC4DEB199CA84800666243 /* XTLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DEA199CA84800666243 /* XTLeftViewController.m */; };
+		75FC4DF2199CA8F700666243 /* XTCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DF0199CA8F700666243 /* XTCenterViewController.m */; };
+		75FC4DF3199CA8F700666243 /* XTCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75FC4DF1199CA8F700666243 /* XTCenterViewController.xib */; };
+		75FC4DF5199CAB1700666243 /* SideSource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75FC4DF4199CAB1600666243 /* SideSource.xcassets */; };
+		75FC4DF9199CAD1B00666243 /* XTRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC4DF7199CAD1B00666243 /* XTRightViewController.m */; };
+		75FC4DFA199CAD1B00666243 /* XTRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75FC4DF8199CAD1B00666243 /* XTRightViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75FC4DB9199CA64C00666243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75FC4D91199CA64C00666243 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75FC4D98199CA64C00666243;
+			remoteInfo = XTSideMenuDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75FC4D99199CA64C00666243 /* XTSideMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTSideMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75FC4D9C199CA64C00666243 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75FC4D9E199CA64C00666243 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		75FC4DA0199CA64C00666243 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		75FC4DA4199CA64C00666243 /* XTSideMenuDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XTSideMenuDemo-Info.plist"; sourceTree = "<group>"; };
+		75FC4DA6199CA64C00666243 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75FC4DA8199CA64C00666243 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75FC4DAA199CA64C00666243 /* XTSideMenuDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XTSideMenuDemo-Prefix.pch"; sourceTree = "<group>"; };
+		75FC4DAB199CA64C00666243 /* XTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTAppDelegate.h; sourceTree = "<group>"; };
+		75FC4DAC199CA64C00666243 /* XTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTAppDelegate.m; sourceTree = "<group>"; };
+		75FC4DAE199CA64C00666243 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		75FC4DB4199CA64C00666243 /* XTSideMenuDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTSideMenuDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75FC4DB5199CA64C00666243 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		75FC4DBD199CA64C00666243 /* XTSideMenuDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XTSideMenuDemoTests-Info.plist"; sourceTree = "<group>"; };
+		75FC4DBF199CA64C00666243 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75FC4DC1199CA64C00666243 /* XTSideMenuDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTSideMenuDemoTests.m; sourceTree = "<group>"; };
+		75FC4DD0199CA6D700666243 /* UIViewController+XTSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XTSideMenu.h"; sourceTree = "<group>"; };
+		75FC4DD1199CA6D700666243 /* UIViewController+XTSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XTSideMenu.m"; sourceTree = "<group>"; };
+		75FC4DD5199CA6D700666243 /* XTSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSideMenu.h; sourceTree = "<group>"; };
+		75FC4DD6199CA6D700666243 /* XTSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSideMenu.m; sourceTree = "<group>"; };
+		75FC4DDD199CA80000666243 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		75FC4DDE199CA80000666243 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		75FC4DDF199CA80000666243 /* UIView+XTFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XTFrame.h"; sourceTree = "<group>"; };
+		75FC4DE0199CA80000666243 /* UIView+XTFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XTFrame.m"; sourceTree = "<group>"; };
+		75FC4DE1199CA80000666243 /* XTBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTBlurView.h; sourceTree = "<group>"; };
+		75FC4DE2199CA80000666243 /* XTBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTBlurView.m; sourceTree = "<group>"; };
+		75FC4DE9199CA84800666243 /* XTLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTLeftViewController.h; sourceTree = "<group>"; };
+		75FC4DEA199CA84800666243 /* XTLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTLeftViewController.m; sourceTree = "<group>"; };
+		75FC4DEF199CA8F700666243 /* XTCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTCenterViewController.h; sourceTree = "<group>"; };
+		75FC4DF0199CA8F700666243 /* XTCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTCenterViewController.m; sourceTree = "<group>"; };
+		75FC4DF1199CA8F700666243 /* XTCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XTCenterViewController.xib; sourceTree = "<group>"; };
+		75FC4DF4199CAB1600666243 /* SideSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SideSource.xcassets; sourceTree = "<group>"; };
+		75FC4DF6199CAD1B00666243 /* XTRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTRightViewController.h; sourceTree = "<group>"; };
+		75FC4DF7199CAD1B00666243 /* XTRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTRightViewController.m; sourceTree = "<group>"; };
+		75FC4DF8199CAD1B00666243 /* XTRightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XTRightViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75FC4D96199CA64C00666243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FC4D9F199CA64C00666243 /* CoreGraphics.framework in Frameworks */,
+				75FC4DA1199CA64C00666243 /* UIKit.framework in Frameworks */,
+				75FC4D9D199CA64C00666243 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75FC4DB1199CA64C00666243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FC4DB6199CA64C00666243 /* XCTest.framework in Frameworks */,
+				75FC4DB8199CA64C00666243 /* UIKit.framework in Frameworks */,
+				75FC4DB7199CA64C00666243 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75FC4D90199CA64C00666243 = {
+			isa = PBXGroup;
+			children = (
+				75FC4DCB199CA6D700666243 /* XTSideMenu */,
+				75FC4DA2199CA64C00666243 /* XTSideMenuDemo */,
+				75FC4DBB199CA64C00666243 /* XTSideMenuDemoTests */,
+				75FC4D9B199CA64C00666243 /* Frameworks */,
+				75FC4D9A199CA64C00666243 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75FC4D9A199CA64C00666243 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75FC4D99199CA64C00666243 /* XTSideMenuDemo.app */,
+				75FC4DB4199CA64C00666243 /* XTSideMenuDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75FC4D9B199CA64C00666243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75FC4D9C199CA64C00666243 /* Foundation.framework */,
+				75FC4D9E199CA64C00666243 /* CoreGraphics.framework */,
+				75FC4DA0199CA64C00666243 /* UIKit.framework */,
+				75FC4DB5199CA64C00666243 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75FC4DA2199CA64C00666243 /* XTSideMenuDemo */ = {
+			isa = PBXGroup;
+			children = (
+				75FC4DAB199CA64C00666243 /* XTAppDelegate.h */,
+				75FC4DAC199CA64C00666243 /* XTAppDelegate.m */,
+				75FC4DEF199CA8F700666243 /* XTCenterViewController.h */,
+				75FC4DF0199CA8F700666243 /* XTCenterViewController.m */,
+				75FC4DF1199CA8F700666243 /* XTCenterViewController.xib */,
+				75FC4DE9199CA84800666243 /* XTLeftViewController.h */,
+				75FC4DEA199CA84800666243 /* XTLeftViewController.m */,
+				75FC4DF6199CAD1B00666243 /* XTRightViewController.h */,
+				75FC4DF7199CAD1B00666243 /* XTRightViewController.m */,
+				75FC4DF8199CAD1B00666243 /* XTRightViewController.xib */,
+				75FC4DF4199CAB1600666243 /* SideSource.xcassets */,
+				75FC4DAE199CA64C00666243 /* Images.xcassets */,
+				75FC4DA3199CA64C00666243 /* Supporting Files */,
+			);
+			path = XTSideMenuDemo;
+			sourceTree = "<group>";
+		};
+		75FC4DA3199CA64C00666243 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75FC4DA4199CA64C00666243 /* XTSideMenuDemo-Info.plist */,
+				75FC4DA5199CA64C00666243 /* InfoPlist.strings */,
+				75FC4DA8199CA64C00666243 /* main.m */,
+				75FC4DAA199CA64C00666243 /* XTSideMenuDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75FC4DBB199CA64C00666243 /* XTSideMenuDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				75FC4DC1199CA64C00666243 /* XTSideMenuDemoTests.m */,
+				75FC4DBC199CA64C00666243 /* Supporting Files */,
+			);
+			path = XTSideMenuDemoTests;
+			sourceTree = "<group>";
+		};
+		75FC4DBC199CA64C00666243 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75FC4DBD199CA64C00666243 /* XTSideMenuDemoTests-Info.plist */,
+				75FC4DBE199CA64C00666243 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75FC4DCB199CA6D700666243 /* XTSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				75FC4DD0199CA6D700666243 /* UIViewController+XTSideMenu.h */,
+				75FC4DD1199CA6D700666243 /* UIViewController+XTSideMenu.m */,
+				75FC4DD5199CA6D700666243 /* XTSideMenu.h */,
+				75FC4DD6199CA6D700666243 /* XTSideMenu.m */,
+				75FC4DDC199CA80000666243 /* XTSideMenuHelper */,
+			);
+			name = XTSideMenu;
+			path = ../XTSideMenu;
+			sourceTree = "<group>";
+		};
+		75FC4DDC199CA80000666243 /* XTSideMenuHelper */ = {
+			isa = PBXGroup;
+			children = (
+				75FC4DDD199CA80000666243 /* UIImage+ImageEffects.h */,
+				75FC4DDE199CA80000666243 /* UIImage+ImageEffects.m */,
+				75FC4DDF199CA80000666243 /* UIView+XTFrame.h */,
+				75FC4DE0199CA80000666243 /* UIView+XTFrame.m */,
+				75FC4DE1199CA80000666243 /* XTBlurView.h */,
+				75FC4DE2199CA80000666243 /* XTBlurView.m */,
+			);
+			path = XTSideMenuHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75FC4D98199CA64C00666243 /* XTSideMenuDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75FC4DC5199CA64C00666243 /* Build configuration list for PBXNativeTarget "XTSideMenuDemo" */;
+			buildPhases = (
+				75FC4D95199CA64C00666243 /* Sources */,
+				75FC4D96199CA64C00666243 /* Frameworks */,
+				75FC4D97199CA64C00666243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XTSideMenuDemo;
+			productName = XTSideMenuDemo;
+			productReference = 75FC4D99199CA64C00666243 /* XTSideMenuDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75FC4DB3199CA64C00666243 /* XTSideMenuDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75FC4DC8199CA64C00666243 /* Build configuration list for PBXNativeTarget "XTSideMenuDemoTests" */;
+			buildPhases = (
+				75FC4DB0199CA64C00666243 /* Sources */,
+				75FC4DB1199CA64C00666243 /* Frameworks */,
+				75FC4DB2199CA64C00666243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75FC4DBA199CA64C00666243 /* PBXTargetDependency */,
+			);
+			name = XTSideMenuDemoTests;
+			productName = XTSideMenuDemoTests;
+			productReference = 75FC4DB4199CA64C00666243 /* XTSideMenuDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75FC4D91199CA64C00666243 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = XT;
+				TargetAttributes = {
+					75FC4DB3199CA64C00666243 = {
+						TestTargetID = 75FC4D98199CA64C00666243;
+					};
+				};
+			};
+			buildConfigurationList = 75FC4D94199CA64C00666243 /* Build configuration list for PBXProject "XTSideMenuDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75FC4D90199CA64C00666243;
+			productRefGroup = 75FC4D9A199CA64C00666243 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75FC4D98199CA64C00666243 /* XTSideMenuDemo */,
+				75FC4DB3199CA64C00666243 /* XTSideMenuDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75FC4D97199CA64C00666243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FC4DF3199CA8F700666243 /* XTCenterViewController.xib in Resources */,
+				75FC4DF5199CAB1700666243 /* SideSource.xcassets in Resources */,
+				75FC4DFA199CAD1B00666243 /* XTRightViewController.xib in Resources */,
+				75FC4DA7199CA64C00666243 /* InfoPlist.strings in Resources */,
+				75FC4DAF199CA64C00666243 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75FC4DB2199CA64C00666243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FC4DC0199CA64C00666243 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75FC4D95199CA64C00666243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FC4DE4199CA80000666243 /* UIView+XTFrame.m in Sources */,
+				75FC4DAD199CA64C00666243 /* XTAppDelegate.m in Sources */,
+				75FC4DE3199CA80000666243 /* UIImage+ImageEffects.m in Sources */,
+				75FC4DE5199CA80000666243 /* XTBlurView.m in Sources */,
+				75FC4DEB199CA84800666243 /* XTLeftViewController.m in Sources */,
+				75FC4DF9199CAD1B00666243 /* XTRightViewController.m in Sources */,
+				75FC4DA9199CA64C00666243 /* main.m in Sources */,
+				75FC4DF2199CA8F700666243 /* XTCenterViewController.m in Sources */,
+				75FC4DD9199CA6D700666243 /* UIViewController+XTSideMenu.m in Sources */,
+				75FC4DDB199CA6D700666243 /* XTSideMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75FC4DB0199CA64C00666243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FC4DC2199CA64C00666243 /* XTSideMenuDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75FC4DBA199CA64C00666243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75FC4D98199CA64C00666243 /* XTSideMenuDemo */;
+			targetProxy = 75FC4DB9199CA64C00666243 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75FC4DA5199CA64C00666243 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75FC4DA6199CA64C00666243 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		75FC4DBE199CA64C00666243 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75FC4DBF199CA64C00666243 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75FC4DC3199CA64C00666243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75FC4DC4199CA64C00666243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75FC4DC6199CA64C00666243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XTSideMenuDemo/XTSideMenuDemo-Prefix.pch";
+				INFOPLIST_FILE = "XTSideMenuDemo/XTSideMenuDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		75FC4DC7199CA64C00666243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XTSideMenuDemo/XTSideMenuDemo-Prefix.pch";
+				INFOPLIST_FILE = "XTSideMenuDemo/XTSideMenuDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		75FC4DC9199CA64C00666243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XTSideMenuDemo.app/XTSideMenuDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XTSideMenuDemo/XTSideMenuDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "XTSideMenuDemoTests/XTSideMenuDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		75FC4DCA199CA64C00666243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XTSideMenuDemo.app/XTSideMenuDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XTSideMenuDemo/XTSideMenuDemo-Prefix.pch";
+				INFOPLIST_FILE = "XTSideMenuDemoTests/XTSideMenuDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75FC4D94199CA64C00666243 /* Build configuration list for PBXProject "XTSideMenuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75FC4DC3199CA64C00666243 /* Debug */,
+				75FC4DC4199CA64C00666243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75FC4DC5199CA64C00666243 /* Build configuration list for PBXNativeTarget "XTSideMenuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75FC4DC6199CA64C00666243 /* Debug */,
+				75FC4DC7199CA64C00666243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75FC4DC8199CA64C00666243 /* Build configuration list for PBXNativeTarget "XTSideMenuDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75FC4DC9199CA64C00666243 /* Debug */,
+				75FC4DCA199CA64C00666243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75FC4D91199CA64C00666243 /* Project object */;
+}
